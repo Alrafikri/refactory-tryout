@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="output"></p>
+
+<script>
+  const numConvert=(value, from, to)=>{
+    let temp;
+    switch (from) {
+      case 'dec':
+        temp = parseInt(value,10);
+        break;
+      case 'bin':
+        temp = parseInt(value,2);
+        break;
+      case 'oct':
+        temp = parseInt(value,8);
+        break;
+      case 'hex':
+        temp = parseInt(value,16);
+        break;
+    }
+    switch (to) {
+      case 'dec':
+        return temp.toString(10);
+      case 'bin':
+        return temp.toString(2);
+      case 'oct':
+        return temp.toString(8);
+      case 'hex':
+        return temp.toString(16);
+    }
+  }
+  let a = 1000;
+  let b = 'dec';
+  let c = 'hex';
+  output = numConvert(a,b,c);
+  document.getElementById("output").innerHTML = output;
+</script>
+
+</body>
+</html>

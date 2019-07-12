@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="demo"></p>
+
+<script>
+  const fruits = [
+    'Anggur', 
+    'Durian', 
+    'Tomat', 
+    'Bengkoang', 
+    'Jeruk', 
+    'Pepaya', 
+    'Jambu', 
+    'Manggis', 
+    'Kelapa', 
+    'Timun',
+  ];
+  
+  function linearSearch(array, toFind){
+    for(let i = 0; i < array.length; i++){
+      if(array[i] === toFind) return toFind+' berada di index '+i;
+    }
+    return 'tidak ditemukan';
+  }
+  
+  let output = linearSearch(fruits,'Jeruk');
+  document.getElementById("demo").innerHTML = output;
+</script>
+
+</body>
+</html>

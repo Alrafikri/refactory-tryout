@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="output"></p>
+
+<script>
+  let input = prompt('masukkan kalimat untuk cek palindrom','A man, a plan, a canal. Panama.');
+  let gaGuna = /[\W_]/g;
+  const isPalindrome = x =>{
+    let kata = x.toLowerCase().replace(gaGuna,'');
+    let checker = kata.split('').reverse().join('');
+    return kata===checker;
+  };
+  let output = isPalindrome(input);
+  document.getElementById("output").innerHTML = output;
+</script>
+
+</body>
+</html>

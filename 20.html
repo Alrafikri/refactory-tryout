@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="output"></p>
+
+<script>
+  let input = [];
+  const dataType = x =>{
+    let type = typeof x;
+    if(type === 'string'){
+      return 'string';
+    } else if (type === 'object'){
+      if(Array.isArray(x)){
+        return 'array';
+      } else {
+        return 'object';
+      }
+    } else if(type==='number'){
+      if(Number.isInteger(x)){
+        return 'integer'; //in javascript binary, hex, oct is integer
+      } else {return 'float'}
+    }
+  }
+  let output = dataType(input);
+  document.getElementById("output").innerHTML = output;
+</script>
+
+</body>
+</html>

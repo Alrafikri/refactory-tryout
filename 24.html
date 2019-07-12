@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+Input Array: <input type="text" id="myText" value="">
+
+<p></p>
+
+<button onclick="lifoIn()">IN</button>
+<button onclick="lifoOut()">OUT</button>
+
+<p id="demo"></p>
+
+<script>
+  let dataArray = [];
+  function lifoIn(){
+  	let x = document.getElementById("myText").value;
+    dataArray.unshift(x);
+    outputFunc();
+  }
+  function lifoOut(){
+    dataArray.shift();
+    outputFunc();
+  }
+  function outputFunc(){
+  	let output = dataArray.join(', ');
+  	document.getElementById("demo").innerHTML = output;
+}
+</script>
+
+</body>
+</html>

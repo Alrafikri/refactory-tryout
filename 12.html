@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="output"></p>
+
+<script>
+  let input = prompt('Masukkan kata');
+  let arrayHuruf = input.split('');
+  let arrayHurufRev = input.split('').reverse();
+  let output = arrayHuruf.join('')+arrayHurufRev.join('');
+  document.getElementById("output").innerHTML = output;
+</script>
+
+</body>
+</html>

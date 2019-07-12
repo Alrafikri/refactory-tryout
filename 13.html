@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="output"></p>
+
+<script>
+  const fruits = [
+    {name: 'Pepaya', price: 3000},
+    {name: 'Jagung', price: 2000},
+    {name: 'Mengkudu', price: 4000},
+    {name: 'Kiwi', price: 6000},
+  ]
+  let output = '';
+  const ArrayObjectString = x =>{
+    x.forEach(function(element){
+      output += `${element.name}: ${element.price}<br>`;
+    })
+  }
+  ArrayObjectString(fruits);
+  document.getElementById("output").innerHTML = output;
+</script>
+
+</body>
+</html>

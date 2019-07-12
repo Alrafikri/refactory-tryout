@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="output"></p>
+
+<script>
+  let output = '';
+  const sampeSeribu = (x) =>{
+  	if(x%100===0){ return '. Kelipatan Seratus'; } else
+    if(x%2===0 && x%5===0){ return '. Genap Kelipatan Lima'; } else
+    if(x%5===0){ return '. Ganjil Kelipatan Lima'; } else
+    if(x%2===0){ return '. Genap'; } else
+    {return '. Ganjil';};
+  };
+  for(let i = 1; i<=1000; i++){
+    output = output+i+sampeSeribu(i)+'<br>';
+  };
+  document.getElementById("output").innerHTML = output;
+</script>
+
+</body>
+</html>

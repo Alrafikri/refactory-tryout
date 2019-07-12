@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="output"></p>
+
+<script>
+  let input = prompt('masukkan angka','6');
+  let angka = Number(input);
+  let output = '';
+  const mundur = x =>{
+    if(x === 1){
+      return output += "1";
+    } else {
+      output += x+', ';
+      mundur(x-1);
+    }
+  }
+  mundur(angka);
+  document.getElementById("output").innerHTML = output;
+</script>
+
+</body>
+</html>

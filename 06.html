@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="output"></p>
+
+<script>
+  let input1 = prompt("Masukkan input pertama");
+  let input2 = prompt("Masukkan input kedua");
+  let output = '';
+  for(let i = input1; i<input2; i++){
+    output = output+i+', ';
+  };
+  output += input2;
+  document.getElementById("output").innerHTML = output;
+</script>
+
+</body>
+</html>

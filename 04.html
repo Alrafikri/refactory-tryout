@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="input"></p>
+<p id="output"></p>
+
+<script>
+  let tahun = prompt("Masukkan tahun");
+  let kabisat = (x) =>{
+  	if(x%4===0){
+    	return 'Kabisat';
+    } else {
+    	return 'Bukan Kabisat';
+    }
+  };
+  if (tahun != null) {
+    document.getElementById("input").innerHTML =
+    `input : ${tahun}`;
+    document.getElementById("output").innerHTML =
+    `output : ${kabisat(tahun)}`;
+  }
+</script>
+
+</body>
+</html>

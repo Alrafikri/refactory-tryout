@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+Input Array: <input type="text" id="myText" value="">
+
+<p></p>
+
+<button onclick="fifoIn()">IN</button>
+<button onclick="fifoOut()">OUT</button>
+
+<p id="demo"></p>
+
+<script>
+  let dataArray = [];
+  function fifoIn(){
+  	let x = document.getElementById("myText").value;
+    dataArray.unshift(x);
+    outputFunc();
+  }
+  function fifoOut(){
+    dataArray.pop();
+    outputFunc();
+  }
+  function outputFunc(){
+  	let output = dataArray.join(', ');
+  	document.getElementById("demo").innerHTML = output;
+}
+</script>
+
+</body>
+</html>

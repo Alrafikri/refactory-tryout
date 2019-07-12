@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="output"></p>
+
+<script>
+  const stuff = ['Meja', 'Buku', 'Topi', 'Baju', 'Kayu'];
+  masukkinAwal = x => {
+    stuff.unshift(x);  
+  }
+  masukkinAkhir = x => {
+    stuff.push(x);
+  }
+  masukkinAwal('Handuk');
+  masukkinAkhir('Celana');
+  document.getElementById("output").innerHTML = stuff;
+</script>
+
+</body>
+</html>

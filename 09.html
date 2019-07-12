@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="output"></p>
+
+<script>
+  let msg = prompt('masukkan kalimat','saya ingin makan nasi goreng');
+  let kata = msg.split(' ');
+  let kataRev = kata.reverse();
+  let msgRev = kataRev.join(' ');
+  document.getElementById("output").innerHTML = msgRev;
+</script>
+
+</body>
+</html>

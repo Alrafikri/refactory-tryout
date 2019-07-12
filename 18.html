@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="output"></p>
+
+<script>
+  let kota = ['Jakarta', 'Aceh', 'Malang', 'Medan', 'Bontang', 'Jogja', 'Jakarta', 'Bandung', 'Malang', 'Solo', 'Palembang', 'Bandung'];
+  const removeDuplicate = x =>{
+    let i = 0;
+    while (i<x.length){
+      for(let j = i+1; j<x.length;j++){
+        if(x[i]===x[j]){
+          x.splice(j,1);
+        }
+      };
+      i++;
+    }
+    return x;
+  }
+  let output = removeDuplicate(kota).join(', ');
+  document.getElementById("output").innerHTML = output;
+</script>
+
+</body>
+</html>

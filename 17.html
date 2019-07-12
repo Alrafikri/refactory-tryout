@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="output"></p>
+
+<script>
+  let asli = [1, 3, 4, 1, 201, 100, 4, 7, 42, 85, 12, 583, 13, 104, 31, 76, 49];
+  const bubbleSort = x =>{
+    let tuker;
+    let temp;
+    do{
+      tuker=false;
+      for(i=0;i<asli.length;i++){
+        if(asli[i]>asli[i+1]){
+          temp = asli[i];
+          asli[i] = asli[i+1];
+          asli[i+1]=temp;
+          tuker=true;
+        }
+      }
+    } while (tuker);
+  };
+  bubbleSort(asli);
+  let output = asli.join(', ');
+  document.getElementById("output").innerHTML = output;
+</script>
+
+</body>
+</html>

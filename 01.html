@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="input"></p>
+<p id="output"></p>
+
+<script>
+  let kata = prompt("Masukkan kata");
+  if (kata != null) {
+  	let jumlahKata = kata.length;
+    document.getElementById("input").innerHTML =
+    `input : ${kata}`;
+    document.getElementById("output").innerHTML =
+    `output : ${jumlahKata}`;
+  }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="input"></p>
+<p id="output"></p>
+
+<script>
+  let usia = prompt("Masukkan usia");
+  let rating = (x) => {
+  	if(x>=21){ return 'Dewasa'; } else
+    if(x>=13){ return 'Remaja'; } else
+    if(x>=9){ return 'Bimbingan orang tua'; } else
+    { return 'Semua usia'; }
+  }
+  document.getElementById("input").innerHTML =
+    `input : ${usia}`;
+  document.getElementById("output").innerHTML =
+    `output : ${rating(usia)}`;
+</script>
+
+</body>
+</html>

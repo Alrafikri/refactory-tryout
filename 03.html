@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="input"></p>
+<p id="output"></p>
+
+<script>
+  let angka = prompt("Masukkan angka");
+  let ganjilGenap = (x) =>{
+  	if(x%2===0){
+    	return 'Genap';
+    } else {
+    	return 'Ganjil';
+    }
+  };
+  if (angka != null) {
+    document.getElementById("input").innerHTML =
+    `input : ${angka}`;
+    document.getElementById("output").innerHTML =
+    `output : ${ganjilGenap(angka)}`;
+  }
+</script>
+
+</body>
+</html>
